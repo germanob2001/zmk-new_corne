@@ -66,10 +66,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &kp N4         &kp N5                                         &mmv MOVE_UP                     &kp KP_DIVIDE     &kp N7        &kp N8        &kp N9        &kp MINUS          &kp BSPC
-&trans  &kp TAB         &bt BT_SEL 0  &kp RC(C)     &kp LC(LS(V))  &kp LC(X)                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N8)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HOME           &kp PG_UP
-&trans  &kp CLCK        &kp LCTRL     &trans        &trans         &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(NUMBER_9)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(BACKSPACE)  &kp LC(BACKSPACE)
-                                      &trans        &trans         &trans                                                                          &kp N0            &kp DEL       &trans
+&trans  &kp LESS_THAN  &kp COLON  &kp PRINTSCREEN  &kp N4         &kp N5                                         &mmv MOVE_UP                     &kp KP_DIVIDE     &kp N7        &kp N8        &kp N9        &kp MINUS          &kp BSPC
+&trans  &kp TAB        &kp D      &kp RC(C)        &kp LC(LS(V))  &kp LC(X)                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N8)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HOME           &kp PG_UP
+&trans  &kp CLCK       &kp LCTRL  &trans           &trans         &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(NUMBER_9)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(BACKSPACE)  &kp LC(BACKSPACE)
+                                  &to 3            &trans         &trans                                                                          &kp N0            &kp DEL       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -90,10 +90,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&bt BT_CLR_ALL  &kp F1      &kp F2     &kp F3     &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&bt BT_SEL 0    &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&bt BT_SEL 1    &sys_reset  &trans     &kp C      &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                       &trans     &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
