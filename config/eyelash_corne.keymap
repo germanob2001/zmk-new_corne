@@ -56,7 +56,7 @@
             bindings = <
 &kp ESCAPE     &kp Q  &kp W  &kp E      &kp R      &kp T                                &kp UP                &kp Y        &kp U      &kp I      &kp O    &kp P          &kp PLUS
 &kp TAB        &kp A  &kp S  &kp D      &kp F      &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J      &kp K      &kp L    &kp ENTER      &kp MINUS
-&kp LESS_THAN  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp K_MUTE              &kp DOWN              &kp N        &kp M      &kp COMMA  &kp DOT  &kp BACKSPACE  &kp RIGHT_WIN
+&kp LESS_THAN  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M      &kp COMMA  &kp DOT  &kp BACKSPACE  &kp SLASH
                              &kp LCTRL  &kp LSHFT  &lt 1 SPACE                                                &lt 2 SPACE  &kp RSHFT  &kp RCTRL
             >;
 
@@ -66,10 +66,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp LESS_THAN  &kp COLON  &kp PRINTSCREEN  &kp N4         &kp N5                                         &mmv MOVE_UP                     &kp KP_DIVIDE     &kp N7        &kp N8        &kp N9        &kp MINUS          &kp BSPC
-&trans  &kp TAB        &kp D      &kp RC(C)        &kp LC(LS(V))  &kp LC(X)                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N8)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HOME           &kp PG_UP
-&trans  &kp CLCK       &kp LCTRL  &trans           &trans         &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(NUMBER_9)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(BACKSPACE)  &kp LC(BACKSPACE)
-                                  &to 3            &trans         &trans                                                                          &kp N0            &kp DEL       &trans
+&trans        &kp LESS_THAN  &kp COLON  &kp PRINTSCREEN  &kp N4         &kp N5                                         &mmv MOVE_UP                     &kp KP_DIVIDE     &kp N7           &kp N8        &kp N9        &kp MINUS          &kp BSPC
+&kp TAB       &kp TAB        &kp D      &kp RC(C)        &kp LC(LS(V))  &kp LC(X)                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N8)        &kp NUMBER_4     &kp N5        &kp NUMBER_6  &kp SEMI           &kp PG_UP
+&kp LEFT_ALT  &kp CLCK       &kp LCTRL  &trans           &trans         &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(NUMBER_9)  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp LC(BACKSPACE)  &kp LC(RIGHT_GUI)
+                                        &to 3            &trans         &trans                                                                          &kp N0            &kp RIGHT_SHIFT  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -78,13 +78,13 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR       &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS              &kp UP_ARROW    &kp LPAR   &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &kp LC(TAB)   &kp LC(C)  &kp LC(LS(V))  &kp LC(X)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none          &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp RA(SINGLE_QUOTE)  &kp RA(BSLH)    &kp RBRC   &kp PIPE  &kp TILDE
-                                    &trans     &kp LSHFT      &kp LCTRL                                                             &kp RET    &trans                &trans
+&trans  &kp EXCL      &kp AT        &kp HASH            &kp DLLR       &kp PRCNT                            &mmv MOVE_UP                     &kp LEFT_BRACKET   &kp SINGLE_QUOTE      &kp UP_ARROW    &kp LPAR   &kp RPAR  &kp BSPC
+&trans  &bt BT_CLR    &kp LC(TAB)   &kp LC(C)           &kp LC(LS(V))  &kp LC(X)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp BSLH  &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none               &none          &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp RA(SINGLE_QUOTE)  &kp RA(BSLH)    &kp RBRC   &kp PIPE  &kp TILDE
+                                    &kp LC(LEFT_SHIFT)  &kp LSHFT      &kp LCTRL                                                             &kp RET            &kp LEFT_SHIFT        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_3 {
@@ -93,7 +93,7 @@
 &bt BT_CLR_ALL  &kp F1      &kp F2     &kp F3     &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &bt BT_SEL 0    &to 0       &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
 &bt BT_SEL 1    &sys_reset  &trans     &kp C      &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans     &trans     &trans                                                                   &trans       &trans     &trans
+                                       &trans     &trans     &to 0                                                                    &trans       &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
