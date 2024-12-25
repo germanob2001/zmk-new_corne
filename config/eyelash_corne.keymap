@@ -78,10 +78,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH            &kp DLLR       &kp PRCNT                            &mmv MOVE_UP                     &kp LEFT_BRACKET   &kp SINGLE_QUOTE      &kp UP_ARROW    &kp LPAR   &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &kp LC(TAB)   &kp LC(C)           &kp LC(LS(V))  &kp LC(X)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none               &none          &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp RA(SINGLE_QUOTE)  &kp RA(BSLH)    &kp RBRC   &kp PIPE  &kp TILDE
-                                    &kp LC(LEFT_SHIFT)  &kp LSHFT      &kp LCTRL                                                             &kp RET            &kp LEFT_SHIFT        &trans
+&trans       &kp EXCL            &kp RA(NUMBER_2)  &kp HASH            &kp DLLR       &kp PRCNT                            &mmv MOVE_UP                     &kp LEFT_BRACKET   &kp SINGLE_QUOTE      &kp UP_ARROW    &kp LPAR   &kp RPAR  &kp BSPC
+&kp LS(TAB)  &kp TAB             &kp LC(TAB)       &kp LC(C)           &kp LC(LS(V))  &kp LC(X)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp BSLH  &kp GRAVE
+&trans       &kp LC(LS(ESCAPE))  &out OUT_BLE      &none               &none          &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp RA(SINGLE_QUOTE)  &kp RA(BSLH)    &kp RBRC   &kp PIPE  &kp TILDE
+                                                   &kp LC(LEFT_SHIFT)  &kp LSHFT      &kp LCTRL                                                             &kp RET            &kp LEFT_SHIFT        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
