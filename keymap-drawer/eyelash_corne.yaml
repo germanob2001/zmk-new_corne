@@ -100,7 +100,7 @@ layers:
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - '@'
+  - AGr+ 2
   - '#'
   - $
   - '%'
@@ -111,8 +111,8 @@ layers:
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
+  - $$mdi:keyboard-tab-reverse$$
+  - $$mdi:keyboard-tab$$
   - Ctl+ $$mdi:keyboard-tab$$
   - Ctl+ C
   - Ctl+Sft+ V
@@ -127,7 +127,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
+  - Ctl+Sft+ $$mdi:keyboard-esc$$
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
