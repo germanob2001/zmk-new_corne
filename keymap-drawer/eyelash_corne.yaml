@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-esc$$
@@ -65,13 +66,13 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:keyboard-tab$$
   - D
-  - Ctl+ C
-  - Ctl+Sft+ V
-  - Ctl+ X
+  - Ctl+C
+  - Ctl+Sft+V
+  - Ctl+X
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: Sft+ 8, s: Sft+ *}
+  - {t: Sft+8, s: Sft+*}
   - '4'
   - {t: '5', s: '%'}
   - '6'
@@ -85,12 +86,12 @@ layers:
   - RGB EFF
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Sft+ 9
+  - Sft+9
   - '1'
   - '2'
   - '3'
-  - {t: 'Ctl+ $$mdi:backspace$$', type: backspace}
-  - Ctl+ RIGHT GUI
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  - Ctl+RIGHT GUI
   - {t: Fn, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -100,7 +101,7 @@ layers:
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - AGr+ 2
+  - AltGr+2
   - '#'
   - $
   - '%'
@@ -113,10 +114,10 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab-reverse$$
   - $$mdi:keyboard-tab$$
-  - Ctl+ $$mdi:keyboard-tab$$
-  - Ctl+ C
-  - Ctl+Sft+ V
-  - Ctl+ X
+  - Ctl+$$mdi:keyboard-tab$$
+  - Ctl+C
+  - Ctl+Sft+V
+  - Ctl+X
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -127,7 +128,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+ $$mdi:keyboard-esc$$
+  - Ctl+Sft+$$mdi:keyboard-esc$$
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -135,12 +136,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
-  - {t: AGr+ ', s: AGr+ "}
-  - {t: AGr+ \, s: AGr+ |}
+  - {t: AltGr+', s: AltGr+"}
+  - {t: AltGr+\, s: AltGr+|}
   - '}'
   - '|'
   - '~'
-  - Ctl+ $$mdi:apple-keyboard-shift$$
+  - Ctl+$$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', type: held}
@@ -177,7 +178,7 @@ layers:
   - F12
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
   - C
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
